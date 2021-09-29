@@ -11,6 +11,8 @@
 		51C6526D270364D60017FCF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6526C270364D60017FCF9 /* ContentView.swift */; };
 		51C6526F270364D80017FCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C6526E270364D80017FCF9 /* Assets.xcassets */; };
 		51C65272270364D80017FCF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C65271270364D80017FCF9 /* Preview Assets.xcassets */; };
+		51C6527927042DEE0017FCF9 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6527827042DEE0017FCF9 /* ColorSlider.swift */; };
+		51C6527B2704301F0017FCF9 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6527A2704301E0017FCF9 /* FancyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		51C6526C270364D60017FCF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51C6526E270364D80017FCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C65271270364D80017FCF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		51C6527827042DEE0017FCF9 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
+		51C6527A2704301E0017FCF9 /* FancyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				51C6526A270364D60017FCF9 /* ColoristApp.swift */,
 				51C6526C270364D60017FCF9 /* ContentView.swift */,
+				51C6527A2704301E0017FCF9 /* FancyButton.swift */,
+				51C6527827042DEE0017FCF9 /* ColorSlider.swift */,
 				51C6526E270364D80017FCF9 /* Assets.xcassets */,
 				51C65270270364D80017FCF9 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51C6526D270364D60017FCF9 /* ContentView.swift in Sources */,
+				51C6527B2704301F0017FCF9 /* FancyButton.swift in Sources */,
+				51C6527927042DEE0017FCF9 /* ColorSlider.swift in Sources */,
 				51C6526B270364D60017FCF9 /* ColoristApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
