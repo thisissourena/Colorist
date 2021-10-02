@@ -11,6 +11,8 @@
 		51B10EF427082F6C00AAD8E9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B10EF327082F6C00AAD8E9 /* Game.swift */; };
 		51B10EF627082F7900AAD8E9 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B10EF527082F7800AAD8E9 /* RGB.swift */; };
 		51B10EF827082FBA00AAD8E9 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B10EF727082FBA00AAD8E9 /* ColorExtention.swift */; };
+		51B10EFA27083ACF00AAD8E9 /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B10EF927083ACF00AAD8E9 /* ViewExtention.swift */; };
+		51B10EFC27083DDC00AAD8E9 /* FancyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B10EFB27083DDC00AAD8E9 /* FancyText.swift */; };
 		51C6526B270364D60017FCF9 /* ColoristApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6526A270364D60017FCF9 /* ColoristApp.swift */; };
 		51C6526D270364D60017FCF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C6526C270364D60017FCF9 /* ContentView.swift */; };
 		51C6526F270364D80017FCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C6526E270364D80017FCF9 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 		51B10EF327082F6C00AAD8E9 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		51B10EF527082F7800AAD8E9 /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 		51B10EF727082FBA00AAD8E9 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
+		51B10EF927083ACF00AAD8E9 /* ViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
+		51B10EFB27083DDC00AAD8E9 /* FancyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyText.swift; sourceTree = "<group>"; };
 		51C65267270364D60017FCF9 /* Colorist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C6526A270364D60017FCF9 /* ColoristApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoristApp.swift; sourceTree = "<group>"; };
 		51C6526C270364D60017FCF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,7 +79,9 @@
 			children = (
 				51C6526A270364D60017FCF9 /* ColoristApp.swift */,
 				51C6526C270364D60017FCF9 /* ContentView.swift */,
+				51B10EFB27083DDC00AAD8E9 /* FancyText.swift */,
 				51B10EF027082EB400AAD8E9 /* FancyCircle.swift */,
+				51B10EF927083ACF00AAD8E9 /* ViewExtention.swift */,
 				51C6527A2704301E0017FCF9 /* FancyButton.swift */,
 				51C6527827042DEE0017FCF9 /* ColorSlider.swift */,
 				51B10EF227082F5C00AAD8E9 /* Model */,
@@ -163,11 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B10EFA27083ACF00AAD8E9 /* ViewExtention.swift in Sources */,
 				51C6526D270364D60017FCF9 /* ContentView.swift in Sources */,
 				51B10EF427082F6C00AAD8E9 /* Game.swift in Sources */,
 				51C6527B2704301F0017FCF9 /* FancyButton.swift in Sources */,
 				51C6527927042DEE0017FCF9 /* ColorSlider.swift in Sources */,
 				51B10EF827082FBA00AAD8E9 /* ColorExtention.swift in Sources */,
+				51B10EFC27083DDC00AAD8E9 /* FancyText.swift in Sources */,
 				51B10EF627082F7900AAD8E9 /* RGB.swift in Sources */,
 				51C6526B270364D60017FCF9 /* ColoristApp.swift in Sources */,
 				51B10EF127082EB400AAD8E9 /* FancyCircle.swift in Sources */,
