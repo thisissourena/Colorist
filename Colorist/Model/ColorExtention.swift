@@ -2,7 +2,7 @@
 //  ColorExtention.swift
 //  ColorExtention
 //
-//  Created by sourena shadmahani on 9/29/21.
+//  Created by sourena shadmahani on 10/2/21.
 //
 
 import Foundation
@@ -21,4 +21,3 @@ extension Color {
   static let highlight = Color("Highlight")
   static let shadow = Color("Shadow")
 }
-
