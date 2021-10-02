@@ -8,23 +8,42 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var value:Double = 0.5
+    @State var game = Game()
+    @State var guess: RGB
+    
+    @State var ShowAlert = false
+    
     var body: some View {
         VStack{
-            FancyCircle(color: Color.blue)
+            FancyCircle(rgb: game.target)
             
-            Text("R:???,G:???,B:???")
+            if !ShowAlert {
+                Text("R:???,G:???,B:???")
+            }else{
+                Text(game.target.intString)
+            }
             
-            FancyCircle(color: Color.green)
+            
+            FancyCircle(rgb: guess)
             
             
-            Text("R:???,G:???,B:???")
+            Text(guess.intString)
             
-            ColorSlider(value: $value, color: .red)
-            ColorSlider(value: $value, color: .green)
-            ColorSlider(value: $value, color: .blue)
+            ColorSlider(value: $guess.red, color: .red)
+            ColorSlider(value: $guess.green, color: .green)
+            ColorSlider(value: $guess.blue, color: .blue)
             
-            FancyButton(text: "Hit me")
+            Button("Hit Me!"){
+                ShowAlert = true
+                self.game.check(guess: guess)
+                
+            }
+            .alert(isPresented: $ShowAlert) {
+                Alert(title: Text("Your Score"), message: Text(String(game.scoreRound)), dismissButton: .default(Text("OK")) {
+                    game.startNewGame()
+                    self.guess = RGB()
+                })
+            }
             
         }
     }
@@ -32,6 +51,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(guess: RGB())
     }
 }

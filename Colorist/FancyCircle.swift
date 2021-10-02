@@ -9,9 +9,9 @@ import SwiftUI
 
 struct FancyCircle: View {
     
-    var color: Color
+    var rgb: RGB
     var body: some View {
         Circle()
-            .fill(color)
+            .fill(Color(rgbStruct: RGB(red: rgb.red, green: rgb.green, blue: rgb.blue)))
     }
 }
