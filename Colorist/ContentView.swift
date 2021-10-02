@@ -7,20 +7,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State var rgb: RGB
+    @State var game = Game()
     @State private var value:Double = 0.5
+    @State private var showAlert = false
+    
     var body: some View {
         VStack{
-            Circle()
-                .fill(Color.blue)
+            FancyCircle(rgb: game.target)
             Text("R:???,G:???,B:???")
-            Circle()
-                .fill(Color.red)
-            Text("R:???,G:???,B:???")
+            FancyCircle(rgb: rgb)
+            Text(game.start.intString)
             
-            ColorSlider(value: $value, color: .red)
-            ColorSlider(value: $value, color: .green)
-            ColorSlider(value: $value, color: .blue)
+            ColorSlider(value: $rgb.red, color: .red)
+            ColorSlider(value: $rgb.green, color: .green)
+            ColorSlider(value: $rgb.blue, color: .blue)
             
             FancyButton(text: "Hit me")
 
@@ -30,6 +31,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(rgb: RGB())
     }
 }
